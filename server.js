@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Define a "root" route directly on app
 // Tomorrow, we'll use best practice routing
 app.get('/', function (req, res) {
-    res.send('<h1>Hello World!</h1>');
+    res.redirect('/home');
 });
 
 app.get('/home', function (req, res) {
